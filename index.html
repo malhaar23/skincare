@@ -65,12 +65,19 @@
   .pc-box.cons h4 { color: var(--red); }
   .pc-box ul { padding-left: 18px; margin: 0; }
   .pc-box li { margin-bottom: 6px; font-size: 13.5px; line-height: 1.55; color: var(--ink); }
+  .timeline { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 22px 26px; margin: 16px 0; }
+  .timeline-item { display: grid; grid-template-columns: 110px 1fr; gap: 16px; padding: 12px 0; border-bottom: 1px dashed var(--border); }
+  .timeline-item:last-child { border-bottom: 0; }
+  .timeline-item .when { font-size: 12px; color: var(--accent); font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; padding-top: 2px; }
+  .timeline-item .what { font-size: 14px; line-height: 1.55; }
+  .timeline-item .what strong { font-weight: 500; }
   .footer-note { margin-top: 56px; padding: 18px 22px; background: rgba(0,0,0,0.025); border-radius: 8px; font-size: 12.5px; color: var(--ink-muted); line-height: 1.55; }
   @media (max-width: 760px) {
     .wrap { padding: 32px 18px 64px; }
     .country-grid, .country-grid.three { grid-template-columns: 1fr; }
     .pro-con { grid-template-columns: 1fr; }
     h1 { font-size: 26px; }
+    .timeline-item { grid-template-columns: 1fr; gap: 2px; }
   }
 </style>
 </head>
@@ -250,8 +257,37 @@
   </div>
 </section>
 
+<section>
+  <h2><span class="num">07</span>Your 4-week starter plan</h2>
+  <p>Don't go from zero to 7-step routine overnight. Build the habit first, then layer.</p>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="when">Week 1</div>
+      <div class="what"><strong>Establish the basics.</strong> Cleanser AM + PM, moisturizer AM + PM, sunscreen AM. That's it. Just 3 products. Goal: don't miss a single day.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="when">Week 2</div>
+      <div class="what"><strong>Continue + observe.</strong> Same 3 products. Notice: is your skin more comfortable? Less oily? Any reactions? Take a phone photo of your face every Sunday in same lighting.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="when">Week 3</div>
+      <div class="what"><strong>Add ONE active.</strong> Pick either: niacinamide (oily/pigmented skin) or hyaluronic acid (dry/dull skin). Add to PM routine before moisturizer. Use 2 nights a week first.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="when">Week 4</div>
+      <div class="what"><strong>Ramp up the active.</strong> If no irritation, use the new active nightly. Compare week-1 photo to week-4 photo. Real change starts being visible now.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="when">Beyond</div>
+      <div class="what"><strong>Slowly add 1 thing/month.</strong> Vitamin C serum in AM, retinol in PM (alternate with niacinamide). Cap your total routine at 5 products. More is not better.</div>
+    </div>
+  </div>
+</section>
+
 <section class="footer-note">
-  <strong>About this guide:</strong> Built for absolute beginners with Indian skin. Recommendations focus on what's available at chemist shops + Amazon/Nykaa in India under ₹2,500/month. Always patch-test new products on your forearm for 3 days before face use.
+  <strong>About this guide:</strong> Built for absolute beginners with Indian skin. Product recommendations are from chemist shops + Nykaa/Amazon India in 2026, priced under ₹2,500/month. Always patch-test new products on your forearm for 3 days before face use. Skin reacts differently to ingredients — what works for someone else may not work for you.
+  <br><br>
+  <strong>One honest caveat:</strong> This guide is not medical advice. For persistent acne, severe pigmentation, eczema, or any condition that isn't improving after 8 weeks of consistent routine, see a dermatologist. ₹1,500 consultation now beats years of trial and error.
 </section>
 
 </div>

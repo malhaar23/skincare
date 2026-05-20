@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skincare 101 for Indian Skin — A Beginner's Guide</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #fafaf7;
+    --card: #ffffff;
+    --ink: #1a1a1a;
+    --ink-muted: #5a5a55;
+    --ink-soft: #888880;
+    --border: rgba(0,0,0,0.08);
+    --border-strong: rgba(0,0,0,0.16);
+    --accent: #C7457A;
+    --accent-bg: #FAE6EF;
+    --green: #3B6D11;
+    --green-bg: #EAF3DE;
+    --red: #A32D2D;
+    --red-bg: #FCEBEB;
+  }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.65; font-size: 15px; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 48px 32px 80px; }
+  .header { border-bottom: 1px solid var(--border-strong); padding-bottom: 28px; margin-bottom: 40px; }
+  .eyebrow { font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 12px; font-weight: 500; }
+  h1 { font-size: 34px; line-height: 1.2; font-weight: 500; letter-spacing: -0.01em; margin-bottom: 14px; color: var(--accent); }
+  .sub { font-size: 17px; color: var(--ink-muted); max-width: 720px; line-height: 1.55; }
+  .meta { margin-top: 20px; display: flex; gap: 24px; font-size: 13px; color: var(--ink-soft); flex-wrap: wrap; }
+  .meta span strong { color: var(--ink); font-weight: 500; }
+  h2 { font-size: 24px; font-weight: 500; margin: 56px 0 8px; letter-spacing: -0.005em; }
+  h2 .num { color: var(--ink-soft); font-weight: 400; margin-right: 12px; }
+  h3 { font-size: 18px; font-weight: 500; margin: 28px 0 10px; }
+  h4 { font-size: 14px; font-weight: 500; margin: 18px 0 8px; color: var(--ink); letter-spacing: 0.01em; }
+  p { margin-bottom: 14px; color: var(--ink); }
+  p.lead { font-size: 16px; color: var(--ink-muted); margin-bottom: 22px; }
+  .tldr { background: var(--card); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 8px; padding: 22px 26px; margin: 24px 0 8px; }
+  .tldr h3 { margin-top: 0; font-size: 15px; color: var(--accent); letter-spacing: 0.02em; }
+  .tldr ul { padding-left: 18px; margin-top: 8px; }
+  .tldr li { margin-bottom: 6px; font-size: 14.5px; color: var(--ink); }
+  .country-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 24px 0 8px; }
+  .country-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 20px 22px; }
+  .country-card .flag { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 6px; font-weight: 500; }
+  .country-card h3 { margin: 0 0 4px; font-size: 17px; }
+  .country-card .tag { font-size: 12.5px; color: var(--ink-muted); margin-bottom: 14px; line-height: 1.4; }
+  .country-card .stat-row { display: flex; justify-content: space-between; padding: 6px 0; font-size: 13px; border-top: 1px solid var(--border); }
+  .country-card .stat-row:first-of-type { border-top: 0; }
+  .country-card .stat-row .k { color: var(--ink-soft); }
+  .country-card .stat-row .v { font-weight: 500; color: var(--ink); }
+  .cost-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 18px 22px; margin: 14px 0; }
+  .cost-card table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  .cost-card th { text-align: left; padding: 8px 6px; color: var(--ink-soft); font-weight: 500; font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; border-bottom: 1px solid var(--border); }
+  .cost-card td { padding: 10px 6px; border-bottom: 1px solid var(--border); }
+  .cost-card tr:last-child td { border-bottom: 0; }
+  .cost-card tr.total td { border-top: 2px solid var(--border-strong); border-bottom: 0; padding-top: 10px; font-weight: 600; }
+  .footer-note { margin-top: 56px; padding: 18px 22px; background: rgba(0,0,0,0.025); border-radius: 8px; font-size: 12.5px; color: var(--ink-muted); line-height: 1.55; }
+  @media (max-width: 760px) {
+    .wrap { padding: 32px 18px 64px; }
+    .country-grid { grid-template-columns: 1fr; }
+    h1 { font-size: 26px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="header">
+  <div class="eyebrow">Skincare guide · built for Indian skin</div>
+  <h1>Skincare 101 for Indian skin</h1>
+  <p class="sub">A no-fluff starter routine for Indian skin types — built around our climate, common concerns (pigmentation, oiliness, tan), and what's actually available in Indian pharmacies and online.</p>
+  <div class="meta">
+    <span><strong>Skill level:</strong> Absolute beginner</span>
+    <span><strong>Budget:</strong> Under ₹2,500/month</span>
+    <span><strong>Time:</strong> 5 min AM + 5 min PM</span>
+  </div>
+</header>
+
+<section>
+  <div class="tldr">
+    <h3>The 30-second answer</h3>
+    <ul>
+      <li><strong>3 products only.</strong> Cleanser, moisturizer, sunscreen. That's it for week 1. Don't add anything else until these become habit.</li>
+      <li><strong>SPF is non-negotiable.</strong> Indian climate + melanin still tans + UVA causes hyperpigmentation. Daily SPF 30+ is the single biggest result-driver.</li>
+      <li><strong>Skip toner.</strong> A marketing invention from the 90s. Modern formulations don't need pH balancing.</li>
+      <li><strong>Don't overdo actives.</strong> Indian skin reacts strongly to retinol and AHAs. Start low % twice a week, ramp up slowly.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">01</span>Identify your skin type first</h2>
+  <p class="lead">Wash face with a mild cleanser, wait 1 hour without applying anything. How does it feel?</p>
+
+  <div class="country-grid">
+    <div class="country-card" style="border-top: 3px solid #E07B3D;">
+      <div class="flag">Oily</div>
+      <h3>Shiny within 2 hours</h3>
+      <div class="tag">T-zone (forehead, nose, chin) feels greasy. Pores visible. Acne-prone.</div>
+      <div class="stat-row"><span class="k">Most common in</span><span class="v">Teens, 20s</span></div>
+      <div class="stat-row"><span class="k">Climate factor</span><span class="v">Humid cities (Mumbai, Chennai)</span></div>
+      <div class="stat-row"><span class="k">Use</span><span class="v">Gel cleanser, gel moisturizer</span></div>
+      <div class="stat-row"><span class="k">Avoid</span><span class="v">Cream cleansers, face oils</span></div>
+    </div>
+    <div class="country-card" style="border-top: 3px solid #4A8BA4;">
+      <div class="flag">Dry</div>
+      <h3>Tight, flaky, dull</h3>
+      <div class="tag">Feels uncomfortable after washing. Visible flakes on cheeks.</div>
+      <div class="stat-row"><span class="k">Most common in</span><span class="v">30s+, AC offices</span></div>
+      <div class="stat-row"><span class="k">Climate factor</span><span class="v">Cold dry areas (Delhi winters)</span></div>
+      <div class="stat-row"><span class="k">Use</span><span class="v">Cream cleanser, rich moisturizer</span></div>
+      <div class="stat-row"><span class="k">Avoid</span><span class="v">Foaming cleansers, hot water</span></div>
+    </div>
+    <div class="country-card" style="border-top: 3px solid #9B6FB0;">
+      <div class="flag">Combination</div>
+      <h3>Oily T-zone, dry cheeks</h3>
+      <div class="tag">The most common Indian skin type. Needs vary by area.</div>
+      <div class="stat-row"><span class="k">Most common in</span><span class="v">~60% of Indians</span></div>
+      <div class="stat-row"><span class="k">Climate factor</span><span class="v">Year-round, all regions</span></div>
+      <div class="stat-row"><span class="k">Use</span><span class="v">Gentle gel cleanser, gel-cream moisturizer</span></div>
+      <div class="stat-row"><span class="k">Avoid</span><span class="v">Stripping foamy cleansers</span></div>
+    </div>
+    <div class="country-card" style="border-top: 3px solid #C7457A;">
+      <div class="flag">Sensitive</div>
+      <h3>Redness, stinging, easily irritated</h3>
+      <div class="tag">Reacts to new products quickly. Often confused with combination skin.</div>
+      <div class="stat-row"><span class="k">Most common in</span><span class="v">All ages, can develop</span></div>
+      <div class="stat-row"><span class="k">Climate factor</span><span class="v">Worse with pollution exposure</span></div>
+      <div class="stat-row"><span class="k">Use</span><span class="v">Fragrance-free, minimal ingredients</span></div>
+      <div class="stat-row"><span class="k">Avoid</span><span class="v">Alcohol, fragrance, essential oils</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">02</span>The morning routine — 5 minutes</h2>
+  <p class="lead">Speed matters more than products. A simple routine you do every day beats an elaborate one you skip half the time.</p>
+  <div class="cost-card">
+    <table>
+      <thead><tr><th>Step</th><th>What</th><th>How long</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Splash with cool water (skip cleanser for AM — your skin was clean overnight)</td><td>30 sec</td></tr>
+        <tr><td>2</td><td>Vitamin C serum (3 drops — optional but powerful for pigmentation)</td><td>10 sec + 2 min absorb</td></tr>
+        <tr><td>3</td><td>Lightweight moisturizer (gel for oily, cream for dry)</td><td>20 sec</td></tr>
+        <tr><td>4</td><td>Sunscreen SPF 30+ (2-finger lengths — most people use 1/4 of what they need)</td><td>30 sec</td></tr>
+        <tr><td>5</td><td>Wait 5 min before makeup/leaving (lets sunscreen set)</td><td>5 min</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">03</span>The evening routine — 5 minutes</h2>
+  <p class="lead">This is when actives go on. Skin repairs itself overnight, so this is where real progress happens.</p>
+  <div class="cost-card">
+    <table>
+      <thead><tr><th>Step</th><th>What</th><th>How long</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Remove makeup/sunscreen (micellar water or oil cleanser if you wore makeup)</td><td>1 min</td></tr>
+        <tr><td>2</td><td>Cleanse with gentle face wash (gel for oily, cream for dry)</td><td>30 sec</td></tr>
+        <tr><td>3</td><td>Treatment: niacinamide nightly OR retinol 2x/week (only after week 4)</td><td>30 sec</td></tr>
+        <tr><td>4</td><td>Moisturizer (heavier than AM is fine)</td><td>30 sec</td></tr>
+        <tr><td>5</td><td>Lip balm + done</td><td>10 sec</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="footer-note">
+  <strong>About this guide:</strong> Built for absolute beginners with Indian skin. Recommendations focus on what's available at chemist shops + Amazon/Nykaa in India under ₹2,500/month. Always patch-test new products on your forearm for 3 days before face use.
+</section>
+
+</div>
+</body>
+</html>

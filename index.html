@@ -40,6 +40,7 @@
   .tldr ul { padding-left: 18px; margin-top: 8px; }
   .tldr li { margin-bottom: 6px; font-size: 14.5px; color: var(--ink); }
   .country-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 24px 0 8px; }
+  .country-grid.three { grid-template-columns: repeat(3, 1fr); }
   .country-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 20px 22px; }
   .country-card .flag { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 6px; font-weight: 500; }
   .country-card h3 { margin: 0 0 4px; font-size: 17px; }
@@ -57,7 +58,7 @@
   .footer-note { margin-top: 56px; padding: 18px 22px; background: rgba(0,0,0,0.025); border-radius: 8px; font-size: 12.5px; color: var(--ink-muted); line-height: 1.55; }
   @media (max-width: 760px) {
     .wrap { padding: 32px 18px 64px; }
-    .country-grid { grid-template-columns: 1fr; }
+    .country-grid, .country-grid.three { grid-template-columns: 1fr; }
     h1 { font-size: 26px; }
   }
 </style>
@@ -91,11 +92,9 @@
 <section>
   <h2><span class="num">01</span>Identify your skin type first</h2>
   <p class="lead">Wash face with a mild cleanser, wait 1 hour without applying anything. How does it feel?</p>
-
   <div class="country-grid">
     <div class="country-card" style="border-top: 3px solid #E07B3D;">
-      <div class="flag">Oily</div>
-      <h3>Shiny within 2 hours</h3>
+      <div class="flag">Oily</div><h3>Shiny within 2 hours</h3>
       <div class="tag">T-zone (forehead, nose, chin) feels greasy. Pores visible. Acne-prone.</div>
       <div class="stat-row"><span class="k">Most common in</span><span class="v">Teens, 20s</span></div>
       <div class="stat-row"><span class="k">Climate factor</span><span class="v">Humid cities (Mumbai, Chennai)</span></div>
@@ -103,8 +102,7 @@
       <div class="stat-row"><span class="k">Avoid</span><span class="v">Cream cleansers, face oils</span></div>
     </div>
     <div class="country-card" style="border-top: 3px solid #4A8BA4;">
-      <div class="flag">Dry</div>
-      <h3>Tight, flaky, dull</h3>
+      <div class="flag">Dry</div><h3>Tight, flaky, dull</h3>
       <div class="tag">Feels uncomfortable after washing. Visible flakes on cheeks.</div>
       <div class="stat-row"><span class="k">Most common in</span><span class="v">30s+, AC offices</span></div>
       <div class="stat-row"><span class="k">Climate factor</span><span class="v">Cold dry areas (Delhi winters)</span></div>
@@ -112,8 +110,7 @@
       <div class="stat-row"><span class="k">Avoid</span><span class="v">Foaming cleansers, hot water</span></div>
     </div>
     <div class="country-card" style="border-top: 3px solid #9B6FB0;">
-      <div class="flag">Combination</div>
-      <h3>Oily T-zone, dry cheeks</h3>
+      <div class="flag">Combination</div><h3>Oily T-zone, dry cheeks</h3>
       <div class="tag">The most common Indian skin type. Needs vary by area.</div>
       <div class="stat-row"><span class="k">Most common in</span><span class="v">~60% of Indians</span></div>
       <div class="stat-row"><span class="k">Climate factor</span><span class="v">Year-round, all regions</span></div>
@@ -121,8 +118,7 @@
       <div class="stat-row"><span class="k">Avoid</span><span class="v">Stripping foamy cleansers</span></div>
     </div>
     <div class="country-card" style="border-top: 3px solid #C7457A;">
-      <div class="flag">Sensitive</div>
-      <h3>Redness, stinging, easily irritated</h3>
+      <div class="flag">Sensitive</div><h3>Redness, stinging, easily irritated</h3>
       <div class="tag">Reacts to new products quickly. Often confused with combination skin.</div>
       <div class="stat-row"><span class="k">Most common in</span><span class="v">All ages, can develop</span></div>
       <div class="stat-row"><span class="k">Climate factor</span><span class="v">Worse with pollution exposure</span></div>
@@ -135,34 +131,67 @@
 <section>
   <h2><span class="num">02</span>The morning routine — 5 minutes</h2>
   <p class="lead">Speed matters more than products. A simple routine you do every day beats an elaborate one you skip half the time.</p>
-  <div class="cost-card">
-    <table>
-      <thead><tr><th>Step</th><th>What</th><th>How long</th></tr></thead>
-      <tbody>
-        <tr><td>1</td><td>Splash with cool water (skip cleanser for AM — your skin was clean overnight)</td><td>30 sec</td></tr>
-        <tr><td>2</td><td>Vitamin C serum (3 drops — optional but powerful for pigmentation)</td><td>10 sec + 2 min absorb</td></tr>
-        <tr><td>3</td><td>Lightweight moisturizer (gel for oily, cream for dry)</td><td>20 sec</td></tr>
-        <tr><td>4</td><td>Sunscreen SPF 30+ (2-finger lengths — most people use 1/4 of what they need)</td><td>30 sec</td></tr>
-        <tr><td>5</td><td>Wait 5 min before makeup/leaving (lets sunscreen set)</td><td>5 min</td></tr>
-      </tbody>
-    </table>
-  </div>
+  <div class="cost-card"><table>
+    <thead><tr><th>Step</th><th>What</th><th>How long</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Splash with cool water (skip cleanser for AM — your skin was clean overnight)</td><td>30 sec</td></tr>
+      <tr><td>2</td><td>Vitamin C serum (3 drops — optional but powerful for pigmentation)</td><td>10 sec + 2 min absorb</td></tr>
+      <tr><td>3</td><td>Lightweight moisturizer (gel for oily, cream for dry)</td><td>20 sec</td></tr>
+      <tr><td>4</td><td>Sunscreen SPF 30+ (2-finger lengths — most people use 1/4 of what they need)</td><td>30 sec</td></tr>
+      <tr><td>5</td><td>Wait 5 min before makeup/leaving (lets sunscreen set)</td><td>5 min</td></tr>
+    </tbody>
+  </table></div>
 </section>
 
 <section>
   <h2><span class="num">03</span>The evening routine — 5 minutes</h2>
   <p class="lead">This is when actives go on. Skin repairs itself overnight, so this is where real progress happens.</p>
-  <div class="cost-card">
-    <table>
-      <thead><tr><th>Step</th><th>What</th><th>How long</th></tr></thead>
-      <tbody>
-        <tr><td>1</td><td>Remove makeup/sunscreen (micellar water or oil cleanser if you wore makeup)</td><td>1 min</td></tr>
-        <tr><td>2</td><td>Cleanse with gentle face wash (gel for oily, cream for dry)</td><td>30 sec</td></tr>
-        <tr><td>3</td><td>Treatment: niacinamide nightly OR retinol 2x/week (only after week 4)</td><td>30 sec</td></tr>
-        <tr><td>4</td><td>Moisturizer (heavier than AM is fine)</td><td>30 sec</td></tr>
-        <tr><td>5</td><td>Lip balm + done</td><td>10 sec</td></tr>
-      </tbody>
-    </table>
+  <div class="cost-card"><table>
+    <thead><tr><th>Step</th><th>What</th><th>How long</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Remove makeup/sunscreen (micellar water or oil cleanser if you wore makeup)</td><td>1 min</td></tr>
+      <tr><td>2</td><td>Cleanse with gentle face wash (gel for oily, cream for dry)</td><td>30 sec</td></tr>
+      <tr><td>3</td><td>Treatment: niacinamide nightly OR retinol 2x/week (only after week 4)</td><td>30 sec</td></tr>
+      <tr><td>4</td><td>Moisturizer (heavier than AM is fine)</td><td>30 sec</td></tr>
+      <tr><td>5</td><td>Lip balm + done</td><td>10 sec</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <h2><span class="num">04</span>The 5 ingredients worth knowing</h2>
+  <p class="lead">You'll see hundreds of marketing terms. These five do 90% of the actual work — everything else is variations or filler.</p>
+  <div class="country-grid three">
+    <div class="country-card" style="border-top: 3px solid #E07B3D;">
+      <div class="flag">Niacinamide</div><h3>The all-rounder, 5%</h3>
+      <div class="tag">Controls oil, fades pigmentation, strengthens barrier. Plays well with everything.</div>
+      <div class="stat-row"><span class="k">When</span><span class="v">AM or PM, daily</span></div>
+      <div class="stat-row"><span class="k">Indian skin</span><span class="v">Excellent — minimal irritation</span></div>
+    </div>
+    <div class="country-card" style="border-top: 3px solid #C7912E;">
+      <div class="flag">Vitamin C</div><h3>The brightener, 10–15%</h3>
+      <div class="tag">Fades tan and dark spots. Brightens dull skin. Boosts SPF.</div>
+      <div class="stat-row"><span class="k">When</span><span class="v">AM only (under SPF)</span></div>
+      <div class="stat-row"><span class="k">Indian skin</span><span class="v">Start 10% — 20% is too strong</span></div>
+    </div>
+    <div class="country-card" style="border-top: 3px solid #6FA76E;">
+      <div class="flag">Hyaluronic Acid</div><h3>The hydrator, 1–2%</h3>
+      <div class="tag">Pulls water into skin. Makes everything else work better. Safe for all skin types.</div>
+      <div class="stat-row"><span class="k">When</span><span class="v">AM and PM, on damp skin</span></div>
+      <div class="stat-row"><span class="k">Indian skin</span><span class="v">Universal — no contraindications</span></div>
+    </div>
+    <div class="country-card" style="border-top: 3px solid #C7457A;">
+      <div class="flag">Retinol</div><h3>The anti-aging, 0.1–0.5%</h3>
+      <div class="tag">Fades pigmentation, smooths texture, prevents wrinkles. Powerful but tricky.</div>
+      <div class="stat-row"><span class="k">When</span><span class="v">PM only, 2x/week → daily</span></div>
+      <div class="stat-row"><span class="k">Indian skin</span><span class="v">Causes hyperpigmentation if rushed</span></div>
+    </div>
+    <div class="country-card" style="border-top: 3px solid #4A8BA4;">
+      <div class="flag">Sunscreen</div><h3>SPF 30+ broad-spectrum</h3>
+      <div class="tag">The single most important step. Prevents 90% of visible aging and tan.</div>
+      <div class="stat-row"><span class="k">When</span><span class="v">AM every day, reapply 3-hourly</span></div>
+      <div class="stat-row"><span class="k">Indian skin</span><span class="v">Mineral SPF leaves white cast — go chemical</span></div>
+    </div>
   </div>
 </section>
 

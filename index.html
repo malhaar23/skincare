@@ -56,10 +56,20 @@
   .cost-card td:last-child { text-align: right; font-variant-numeric: tabular-nums; }
   .cost-card tr:last-child td { border-bottom: 0; }
   .cost-card tr.total td { border-top: 2px solid var(--border-strong); border-bottom: 0; padding-top: 10px; font-weight: 600; }
+  .pro-con { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 16px 0 24px; }
+  .pc-box { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 16px 18px; }
+  .pc-box.pros { background: var(--green-bg); border-color: rgba(59,109,17,0.18); }
+  .pc-box.cons { background: var(--red-bg); border-color: rgba(163,45,45,0.16); }
+  .pc-box h4 { margin-top: 0; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; }
+  .pc-box.pros h4 { color: var(--green); }
+  .pc-box.cons h4 { color: var(--red); }
+  .pc-box ul { padding-left: 18px; margin: 0; }
+  .pc-box li { margin-bottom: 6px; font-size: 13.5px; line-height: 1.55; color: var(--ink); }
   .footer-note { margin-top: 56px; padding: 18px 22px; background: rgba(0,0,0,0.025); border-radius: 8px; font-size: 12.5px; color: var(--ink-muted); line-height: 1.55; }
   @media (max-width: 760px) {
     .wrap { padding: 32px 18px 64px; }
     .country-grid, .country-grid.three { grid-template-columns: 1fr; }
+    .pro-con { grid-template-columns: 1fr; }
     h1 { font-size: 26px; }
   }
 </style>
@@ -215,6 +225,29 @@
     </tbody>
   </table></div>
   <p style="font-size: 13px; color: var(--ink-soft);">Other reliable Indian brands: Plum, Dr. Sheth's, Foxtale, Klairs (Korean, available at Nykaa). Avoid: anything with "fairness" claims, alcohol-based toners, scrubs more than 1x/week.</p>
+</section>
+
+<section>
+  <h2><span class="num">06</span>Myths that need to die</h2>
+  <p class="lead">Indian skincare culture is full of inherited advice. Some good, some actively harmful.</p>
+  <div class="pro-con">
+    <div class="pc-box cons"><h4>Myths to ignore</h4><ul>
+      <li><strong>"Toothpaste on pimples"</strong> — burns skin, causes hyperpigmentation in Indian skin types</li>
+      <li><strong>"Lemon juice for tan"</strong> — disrupts skin barrier, makes pigmentation worse in sun</li>
+      <li><strong>"You don't need SPF indoors"</strong> — windows let UVA through; even phone screens emit some blue light</li>
+      <li><strong>"Oily skin doesn't need moisturizer"</strong> — opposite is true; skipping it triggers more oil production</li>
+      <li><strong>"Scrubbing makes skin clean"</strong> — physical scrubs cause micro-tears, especially harmful on acne</li>
+      <li><strong>"Expensive = better"</strong> — most active ingredients are commodities; ₹350 niacinamide works the same as ₹2,500 version</li>
+    </ul></div>
+    <div class="pc-box pros"><h4>What actually works</h4><ul>
+      <li><strong>Consistency over fancy</strong> — same 3 products daily for 6 weeks shows real results</li>
+      <li><strong>SPF, every day</strong> — including monsoon, cloudy days, and "I'm just stepping out for 10 min"</li>
+      <li><strong>Patience</strong> — skin cell turnover is 28 days; you won't see results before week 4</li>
+      <li><strong>One change at a time</strong> — add new products with 2-week gaps so you know what's working/breaking you out</li>
+      <li><strong>Sleep + water + less sugar</strong> — affects skin more than any serum</li>
+      <li><strong>Dermat consultation if pigmentation/acne is persistent</strong> — ₹1,000-1,500/visit; faster than years of trial and error</li>
+    </ul></div>
+  </div>
 </section>
 
 <section class="footer-note">
